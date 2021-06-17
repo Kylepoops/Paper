@@ -38,8 +38,8 @@ jobs:
                   git config --global user.name "Github Actions"
                   ./gradlew applyPatches --stacktrace
                   ./gradlew build --stacktrace
-              - name: Upload Artifact
-                uses: actions/upload-artifact@v2
-                with:
-                    name: Paper
-                    path: *.jar
+            - name: Upload Artifact
+              uses: actions/upload-artifact@v2
+              with:
+                 name: Paper
+                 path: *.jar
