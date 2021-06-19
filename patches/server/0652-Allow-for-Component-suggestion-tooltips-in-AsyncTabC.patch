@@ -6,7 +6,7 @@ Subject: [PATCH] Allow for Component suggestion tooltips in
 
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index 435669e88d5b366531cef42df835e4d6e243f3c8..1f7ac37a1640d5fa4c93929e21bf8b84af136eea 100644
+index 6a40ce317bd0e5a0043cd156d4c32de95d5d2827..78ad9688a9acab75fb059f2a37528692faf71e86 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -758,12 +758,11 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser

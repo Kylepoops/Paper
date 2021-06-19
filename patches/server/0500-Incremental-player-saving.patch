@@ -25,7 +25,7 @@ index b67ba8f75e4a3358d7c2462918b85b0bf9b5a922..fdbd8b89bb8bf3b61f60b812b90483c9
 +    }
  }
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index ccca42f9a1cd72e7f4fe21bd626b61f06c51e2e7..7ee2099dd22eaab384a16ef6a4ab50791fa16aac 100644
+index 21c16bf341e846f90a24fe2395ff89f1ace70d73..a962209749c7cc7f6d304073f5f2bce55014a29e 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -955,7 +955,6 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
@@ -55,7 +55,7 @@ index ccca42f9a1cd72e7f4fe21bd626b61f06c51e2e7..7ee2099dd22eaab384a16ef6a4ab5079
          } // Paper start
          for (ServerLevel level : this.getAllLevels()) {
 diff --git a/src/main/java/net/minecraft/server/level/ServerPlayer.java b/src/main/java/net/minecraft/server/level/ServerPlayer.java
-index 8f12232bfdf82c140fe83f88ef93b96092d586a8..4c658bb7d400e6a4ca1dbacb80e031f01cea2e21 100644
+index 6acf0fb29261ba005562127894438797d5853573..88a7f2e69ad74303cbb779d06903d34a5ff40a6c 100644
 --- a/src/main/java/net/minecraft/server/level/ServerPlayer.java
 +++ b/src/main/java/net/minecraft/server/level/ServerPlayer.java
 @@ -169,6 +169,7 @@ public class ServerPlayer extends Player {
@@ -67,7 +67,7 @@ index 8f12232bfdf82c140fe83f88ef93b96092d586a8..4c658bb7d400e6a4ca1dbacb80e031f0
      private static final int NEUTRAL_MOB_DEATH_NOTIFICATION_RADII_Y = 10;
      public ServerGamePacketListenerImpl connection;
 diff --git a/src/main/java/net/minecraft/server/players/PlayerList.java b/src/main/java/net/minecraft/server/players/PlayerList.java
-index 371ecab3f90be690b66db3992239bf5625eb1f6e..ebadb6f59e5b9dcb2f80f837d3d67e0ba50cdad2 100644
+index 7acf01ee407555862ad2483eee4543e0284c2199..8bedc2cad5faf621ac5515fafcd093e3bd180126 100644
 --- a/src/main/java/net/minecraft/server/players/PlayerList.java
 +++ b/src/main/java/net/minecraft/server/players/PlayerList.java
 @@ -561,6 +561,7 @@ public abstract class PlayerList {

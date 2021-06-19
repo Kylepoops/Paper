@@ -5,7 +5,7 @@ Subject: [PATCH] Limit item frame cursors on maps
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 20ce2c304ba57e2399e966da7dee9a02e57d9fa5..86f84a7ebc7a118187aabaf44c83ea737af34c6e 100644
+index c94579d5db6802ef27c6c64cde1cdfdff5040ed2..05c1aa7c49134e099e3d14a244252173e6755401 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -792,5 +792,10 @@ public class PaperWorldConfig {

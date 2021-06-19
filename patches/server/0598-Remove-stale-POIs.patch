@@ -5,10 +5,10 @@ Subject: [PATCH] Remove stale POIs
 
 
 diff --git a/src/main/java/net/minecraft/server/level/ServerLevel.java b/src/main/java/net/minecraft/server/level/ServerLevel.java
-index 6708ac20478264889ea92f953afcbd9f4098d08e..ff1ad929cb4494c7a97fe5e240421e25b7ff0857 100644
+index aae3c8d5cbbdc6d736257c7454d97ff985ae4187..a194558e5dc0feb57681084240822a9d4b6b9bab 100644
 --- a/src/main/java/net/minecraft/server/level/ServerLevel.java
 +++ b/src/main/java/net/minecraft/server/level/ServerLevel.java
-@@ -1749,6 +1749,11 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
+@@ -1742,6 +1742,11 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
              });
              optional1.ifPresent((villageplacetype) -> {
                  this.getServer().execute(() -> {

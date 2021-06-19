@@ -5,7 +5,7 @@ Subject: [PATCH] Add OBSTRUCTED reason to BedEnterResult
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
-index c25586aa8d2e9ddaa7839020ecb499b12d5fe381..6f2c166ffc128fc3400b6d831274a2957b2d1153 100644
+index 7159d63c7708cebda60da33eefc8a492d8de6219..ef4efe95bfa9058b9f9a6736e111b7cddfee4fbd 100644
 --- a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 +++ b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 @@ -257,6 +257,10 @@ public class CraftEventFactory {

@@ -6,7 +6,7 @@ Subject: [PATCH] Return chat component with empty text instead of throwing
 
 
 diff --git a/src/main/java/net/minecraft/world/inventory/AbstractContainerMenu.java b/src/main/java/net/minecraft/world/inventory/AbstractContainerMenu.java
-index 766c907f92ca8cb19b22cd19185cc92603aeca03..311ace44ba65d6dd24941b56e78e148134ceb6f9 100644
+index 92681e56cea92a4600ef268b21c1b56e15fe3a03..b4c1e62c6ed1ea0319ebb268bf8032218a306e78 100644
 --- a/src/main/java/net/minecraft/world/inventory/AbstractContainerMenu.java
 +++ b/src/main/java/net/minecraft/world/inventory/AbstractContainerMenu.java
 @@ -20,6 +20,7 @@ import net.minecraft.ReportedException;

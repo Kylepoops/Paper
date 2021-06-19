@@ -5,7 +5,7 @@ Subject: [PATCH] Add raw address to AsyncPlayerPreLoginEvent
 
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
-index 93f52208785c1632e945a49ce1f91a50c4c2fb03..c6840521fc0734670c50ef4519e13962416ca7a7 100644
+index b8fb3f99e4af5768d8afc1b143e5585f08cc21a9..9e9f0fb1dd6b9a92bd84c50ebdbd79beaf45b58c 100644
 --- a/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
 @@ -346,12 +346,13 @@ public class ServerLoginPacketListenerImpl implements ServerLoginPacketListener

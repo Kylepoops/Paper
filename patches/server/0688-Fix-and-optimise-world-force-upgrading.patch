@@ -263,7 +263,7 @@ index cf0a74b8a1c31d4bc493eb09a69ee2bd94cb6485..6fa1a7da70896d0ff34d38698769195a
          Main.LOGGER.info("Forcing world upgrade! {}", session.getLevelId()); // CraftBukkit
          WorldUpgrader worldupgrader = new WorldUpgrader(session, dataFixer, worlds, eraseCache);
 diff --git a/src/main/java/net/minecraft/server/MinecraftServer.java b/src/main/java/net/minecraft/server/MinecraftServer.java
-index 6f68e45bdb01605a93af1a4117743c6b0ee26056..f9e15a804388e2aeff8b45d7fba151651438f1c6 100644
+index 4ad480092a87b7bede679cf5e86000702ab8ee6a..2b7b63ea08c8e4f43c9678671fb8d08628b48b36 100644
 --- a/src/main/java/net/minecraft/server/MinecraftServer.java
 +++ b/src/main/java/net/minecraft/server/MinecraftServer.java
 @@ -563,13 +563,7 @@ public abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
@@ -297,7 +297,7 @@ index 6f68e45bdb01605a93af1a4117743c6b0ee26056..f9e15a804388e2aeff8b45d7fba15165
  
              if (dimensionKey == LevelStem.OVERWORLD) {
 diff --git a/src/main/java/net/minecraft/world/level/Level.java b/src/main/java/net/minecraft/world/level/Level.java
-index 54cac6167796360ddaeb0b968f17a3533c4b9775..aa4969ea486c8654228d96e48a2192500ee78a63 100644
+index 6a7882be8d195f5bee39313235771fc711b4d560..870ff060e34de4ec49ad5496e79c2bd543297c41 100644
 --- a/src/main/java/net/minecraft/world/level/Level.java
 +++ b/src/main/java/net/minecraft/world/level/Level.java
 @@ -174,6 +174,15 @@ public abstract class Level implements LevelAccessor, AutoCloseable {
@@ -317,7 +317,7 @@ index 54cac6167796360ddaeb0b968f17a3533c4b9775..aa4969ea486c8654228d96e48a219250
          return this.world;
      }
 diff --git a/src/main/java/net/minecraft/world/level/chunk/storage/RegionFileStorage.java b/src/main/java/net/minecraft/world/level/chunk/storage/RegionFileStorage.java
-index e1b9051f8537db6f023cfdeaca4fb89305ece363..5885c7c18d165270361d6fde1e1b89b34a578555 100644
+index 43510774d489bfdd30f10d521e424fa1363b8919..6496108953effae82391b5c1ea6fdec8482731cd 100644
 --- a/src/main/java/net/minecraft/world/level/chunk/storage/RegionFileStorage.java
 +++ b/src/main/java/net/minecraft/world/level/chunk/storage/RegionFileStorage.java
 @@ -31,6 +31,28 @@ public class RegionFileStorage implements AutoCloseable {

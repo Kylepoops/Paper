@@ -5,7 +5,7 @@ Subject: [PATCH] Throw proper exception on empty JsonList file
 
 
 diff --git a/src/main/java/net/minecraft/server/players/StoredUserList.java b/src/main/java/net/minecraft/server/players/StoredUserList.java
-index 0851dca56ae680387d56b3fdc894746c248604f5..a492f20328e0a4789fbdd1c2c84473d1958143ac 100644
+index 2567e51f7de898ea0a2411a176af70bdc4551260..9152c6c9e7e5c8fdb9183c2b4f088a810621b333 100644
 --- a/src/main/java/net/minecraft/server/players/StoredUserList.java
 +++ b/src/main/java/net/minecraft/server/players/StoredUserList.java
 @@ -187,6 +187,7 @@ public abstract class StoredUserList<K, V extends StoredUserEntry<K>> {

@@ -18,7 +18,7 @@ index c3cdc5a7ae90b7d2dd5676d66086e1f0c5b23d0d..b096384cdc7596166e010e06272534b8
          this.interactResult = event.useItemInHand() == Event.Result.DENY;
          this.interactPosition = blockposition.immutable();
 diff --git a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
-index ef39fd4842cb5f42a0c7b4f9b72630ac221c7501..dc2a5dc3a3c0bcf3fdee5c5d61ed68f8b0212bb9 100644
+index 9069fdc604cf3ba23dec46479c87b1311dec39e6..7823477b8fc18901014ba397f711de50cb9880f3 100644
 --- a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 +++ b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 @@ -55,7 +55,9 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParams;

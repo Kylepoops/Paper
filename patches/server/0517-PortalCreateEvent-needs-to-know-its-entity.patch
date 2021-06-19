@@ -5,7 +5,7 @@ Subject: [PATCH] PortalCreateEvent needs to know its entity
 
 
 diff --git a/src/main/java/net/minecraft/world/item/ItemStack.java b/src/main/java/net/minecraft/world/item/ItemStack.java
-index b513fa552440da7a722dfe8cbf92e7294495cd67..f85e9fb13ddeb5c3260592e3cdfe958a14bd63f6 100644
+index 41de19cc0cf5d4a2e5963a4226d08585d396fe42..aa0680291d042b9b4510008965d80cfd075f277c 100644
 --- a/src/main/java/net/minecraft/world/item/ItemStack.java
 +++ b/src/main/java/net/minecraft/world/item/ItemStack.java
 @@ -407,7 +407,7 @@ public final class ItemStack {
@@ -60,7 +60,7 @@ index a36d31caa5bfc82a5fd9b16dc42334955fe7511d..177d1da44c83da5f99ae91891dec41dc
  
          }
 diff --git a/src/main/java/net/minecraft/world/level/block/FireBlock.java b/src/main/java/net/minecraft/world/level/block/FireBlock.java
-index c86bf175853197dceaa91a2287ef51de87b9d5f9..48d9174f88beb759966bfca4c5861aa25cdb2942 100644
+index 3249b4a7e2267d8c321ae4cf592e9fc26dfdcb98..6754d071fe91f9e89cca0be4a06431007289ab10 100644
 --- a/src/main/java/net/minecraft/world/level/block/FireBlock.java
 +++ b/src/main/java/net/minecraft/world/level/block/FireBlock.java
 @@ -13,6 +13,7 @@ import net.minecraft.core.Direction;
@@ -87,7 +87,7 @@ index c86bf175853197dceaa91a2287ef51de87b9d5f9..48d9174f88beb759966bfca4c5861aa2
  
      private static int getFireTickDelay(Random random) {
 diff --git a/src/main/java/net/minecraft/world/level/block/state/BlockBehaviour.java b/src/main/java/net/minecraft/world/level/block/state/BlockBehaviour.java
-index 6d4ef15842c6bd230543de19dd1053a4fe6ad270..597bb3b9b638c59c6ddc21095e4fe4503ef36cb1 100644
+index 736e38a6ee3dc36ed886d047484bda9516845324..4383936b07c60a12e4368da1b9c36297f1ca7b01 100644
 --- a/src/main/java/net/minecraft/world/level/block/state/BlockBehaviour.java
 +++ b/src/main/java/net/minecraft/world/level/block/state/BlockBehaviour.java
 @@ -32,6 +32,7 @@ import net.minecraft.world.item.DyeColor;

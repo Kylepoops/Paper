@@ -7,7 +7,7 @@ Inline bit operations and reduce instruction count to make these hot
 operations faster
 
 diff --git a/src/main/java/net/minecraft/core/BlockPos.java b/src/main/java/net/minecraft/core/BlockPos.java
-index 86618513e8f777d1d738b230c97eb527ddce7c26..8f0cf4297015f3cbe709e2eb82280cac72489925 100644
+index 80d8873bc2512ecde6a531e974b14e9b48402d64..b70aa66732fb5e957aed0901f4c76358b2c56f8e 100644
 --- a/src/main/java/net/minecraft/core/BlockPos.java
 +++ b/src/main/java/net/minecraft/core/BlockPos.java
 @@ -30,15 +30,16 @@ public class BlockPos extends Vec3i {

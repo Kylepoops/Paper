@@ -47,7 +47,7 @@ index 7f140333c2e62012fa572c1a061d84432426997f..b67ba8f75e4a3358d7c2462918b85b0b
 +    }
  }
 diff --git a/src/main/java/net/minecraft/world/level/block/piston/PistonBaseBlock.java b/src/main/java/net/minecraft/world/level/block/piston/PistonBaseBlock.java
-index 44cc09006eac6315d167a2628857f9942eb1fc13..aea9a2dc4164f5728e711efb3009bde8862c7345 100644
+index 4eac07022a7d896ee8921afa6d35cba7f0c89941..dd50a29d47a62df8cdfd69358218d1559b6794ef 100644
 --- a/src/main/java/net/minecraft/world/level/block/piston/PistonBaseBlock.java
 +++ b/src/main/java/net/minecraft/world/level/block/piston/PistonBaseBlock.java
 @@ -411,14 +411,26 @@ public class PistonBaseBlock extends DirectionalBlock {

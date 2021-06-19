@@ -5,7 +5,7 @@ Subject: [PATCH] Allow adding items to BlockDropItemEvent
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
-index 2c26ac546ae5915c200c616927e8f9ed3dc8c1f5..71571868090062f02579d50ae483d9f367de5016 100644
+index 4991ee6671f73b446e5dff958427b10aac78c63a..a59a449c0a7b76527f009031aee2d11d6b43cadf 100644
 --- a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 +++ b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 @@ -390,13 +390,30 @@ public class CraftEventFactory {

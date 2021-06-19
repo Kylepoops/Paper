@@ -6,7 +6,7 @@ Subject: [PATCH] Fix invulnerable end crystals
 MC-108513
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 7922192dbe37b9cfcfe85d6ac240c145be467b31..4a24d7ae6b65fced643859a965ce1d4f6a3828fd 100644
+index 258d54e450ff5aec06eaeb1d57c049d9b0b3ea48..417cf3d8988f28fa1e0b05f11b89ef2c02d59ed9 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -802,5 +802,10 @@ public class PaperWorldConfig {

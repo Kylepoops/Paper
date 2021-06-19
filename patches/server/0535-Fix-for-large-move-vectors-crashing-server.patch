@@ -6,7 +6,7 @@ Subject: [PATCH] Fix for large move vectors crashing server
 Check movement distance also based on current position.
 
 diff --git a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
-index b5b5f36cbdaac7791426ed721ff7db523edbda95..36dccc209afb838cd3dbdfd26893cf5481d6653f 100644
+index 32106de96d13b4d5be08c3c85b1e57d3552e9429..3db026216308628321a334ccb64b0ea97e524393 100644
 --- a/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerGamePacketListenerImpl.java
 @@ -507,19 +507,24 @@ public class ServerGamePacketListenerImpl implements ServerPlayerConnection, Ser

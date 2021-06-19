@@ -20,10 +20,10 @@ index 7fc5bf095afa6d5881285b89091d2ff48ffb69f0..0eba516110b82d917c3374a9fe5bbf33
  }
  
 diff --git a/src/main/java/net/minecraft/server/level/ServerLevel.java b/src/main/java/net/minecraft/server/level/ServerLevel.java
-index 40bd401191973c695f64b92d284363a77f051914..ab9938294e4b0044cb601953c06a04c15db9b9ec 100644
+index e418bcda3d6b5f219fc8a6431b449ef4de9a8a4e..ecfa6089be3f81704a88877357e3aa0cf45ee332 100644
 --- a/src/main/java/net/minecraft/server/level/ServerLevel.java
 +++ b/src/main/java/net/minecraft/server/level/ServerLevel.java
-@@ -1345,6 +1345,7 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
+@@ -1339,6 +1339,7 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
      @Override
      public void sendBlockUpdated(BlockPos pos, BlockState oldState, BlockState newState, int flags) {
          this.getChunkSource().blockChanged(pos);
@@ -31,7 +31,7 @@ index 40bd401191973c695f64b92d284363a77f051914..ab9938294e4b0044cb601953c06a04c1
          VoxelShape voxelshape = oldState.getCollisionShape(this, pos);
          VoxelShape voxelshape1 = newState.getCollisionShape(this, pos);
  
-@@ -1372,6 +1373,7 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
+@@ -1366,6 +1367,7 @@ public class ServerLevel extends net.minecraft.world.level.Level implements Worl
              }
  
          }

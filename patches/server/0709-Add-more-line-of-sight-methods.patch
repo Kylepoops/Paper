@@ -5,7 +5,7 @@ Subject: [PATCH] Add more line of sight methods
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/LivingEntity.java b/src/main/java/net/minecraft/world/entity/LivingEntity.java
-index 76400ad859d478139b9fd0433dca2a98ae49d2db..58b36ed797476f3cec78529e09e913ebb791c5e3 100644
+index 0f62182cc570b6a1e687744c01333253456081f4..57c448ee93df76fc2a17c75fafc78408d720ced3 100644
 --- a/src/main/java/net/minecraft/world/entity/LivingEntity.java
 +++ b/src/main/java/net/minecraft/world/entity/LivingEntity.java
 @@ -3424,6 +3424,7 @@ public abstract class LivingEntity extends Entity {
@@ -17,7 +17,7 @@ index 76400ad859d478139b9fd0433dca2a98ae49d2db..58b36ed797476f3cec78529e09e913eb
          }
      }
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
-index 9549f82a19da6e9b01407405801148d775ea69fc..9031f4423bb59b8f41968a58924d967a915d2446 100644
+index 2247d1c7c7dd1c225c511b44d6aeb5c3e75bdb2a..1cc8a85ae69c98987ab516418808b688c266711c 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 @@ -330,6 +330,18 @@ public class CraftWorld implements World {

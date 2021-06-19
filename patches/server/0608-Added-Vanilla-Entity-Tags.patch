@@ -55,7 +55,7 @@ index 0d29e3163a637c742d100129cb650f53635ef765..4739b4c3035064de328595329ee0b65e
                  throw new IllegalArgumentException();
          }
 diff --git a/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java b/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
-index b55d5c14000317db97f2f6e511f97ff6f03fa972..af60eff6d3665f152762fa1e5a36a2461efa2c98 100644
+index 9cbe97686394a5c4ae7b401d846b1a3525602d46..75240802d17ff6b032c8708700cb2407cca3e56f 100644
 --- a/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
 +++ b/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
 @@ -116,8 +116,17 @@ public final class CraftMagicNumbers implements UnsafeValues {

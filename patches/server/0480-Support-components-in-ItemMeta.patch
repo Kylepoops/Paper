@@ -5,7 +5,7 @@ Subject: [PATCH] Support components in ItemMeta
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/inventory/CraftMetaItem.java b/src/main/java/org/bukkit/craftbukkit/inventory/CraftMetaItem.java
-index daca454b375ab1d5900b6c3c9b6575463e47a3a9..81738dac125a7247fff5e51fa595667ef25ba0a1 100644
+index 55ad7f0d75d88c9848b65149002d2bd3a91719ca..f9f1c5665adb703042ac7fca76ce2e9f8ebde9d3 100644
 --- a/src/main/java/org/bukkit/craftbukkit/inventory/CraftMetaItem.java
 +++ b/src/main/java/org/bukkit/craftbukkit/inventory/CraftMetaItem.java
 @@ -873,11 +873,23 @@ class CraftMetaItem implements ItemMeta, Damageable, Repairable, BlockDataMeta {

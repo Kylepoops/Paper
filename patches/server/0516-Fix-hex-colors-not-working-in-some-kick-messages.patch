@@ -43,7 +43,7 @@ index c09d3cdb3acb04b6a833c30a619ff2af5e8b6b18..2384ae5082afd01c4f28fe2f3f782cdc
                              this.connection.disconnect(chatmessage);
                              return;
 diff --git a/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java b/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
-index 3a7cc4f8ee62c8ff726ecf3e669c9f9ba5651487..93f52208785c1632e945a49ce1f91a50c4c2fb03 100644
+index 195f5d1519c3fc2fdd03ecd0d49d7fba74037692..b8fb3f99e4af5768d8afc1b143e5585f08cc21a9 100644
 --- a/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
 +++ b/src/main/java/net/minecraft/server/network/ServerLoginPacketListenerImpl.java
 @@ -106,14 +106,7 @@ public class ServerLoginPacketListenerImpl implements ServerLoginPacketListener

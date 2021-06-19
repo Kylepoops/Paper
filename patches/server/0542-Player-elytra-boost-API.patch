@@ -5,7 +5,7 @@ Subject: [PATCH] Player elytra boost API
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java b/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
-index 99e35c68875ae807f406acd6f693f216fab749cd..abc5f4be2f58532d88978e53d7d9b52ddb46ff48 100644
+index 6557ae8a996ddb227a9fadd4ac30d44b1c5e47b2..a57bdc69d56c0a0ff510f4103745b18ca7ff863e 100644
 --- a/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/entity/CraftPlayer.java
 @@ -538,6 +538,20 @@ public class CraftPlayer extends CraftHumanEntity implements Player {

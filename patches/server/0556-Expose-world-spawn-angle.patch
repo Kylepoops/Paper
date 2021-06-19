@@ -5,7 +5,7 @@ Subject: [PATCH] Expose world spawn angle
 
 
 diff --git a/src/main/java/net/minecraft/server/players/PlayerList.java b/src/main/java/net/minecraft/server/players/PlayerList.java
-index 24a1f72fa81584dcdb447a4e2d1d68462c6357ee..1c6ea9dd4335c573d6f83d38f77470333139580b 100644
+index 295a2c9328172923d470e2c9e8338e0edb020ede..d9a14f58b9249ff10cc7f5fde60f3aa8bd1e9235 100644
 --- a/src/main/java/net/minecraft/server/players/PlayerList.java
 +++ b/src/main/java/net/minecraft/server/players/PlayerList.java
 @@ -866,7 +866,7 @@ public abstract class PlayerList {
@@ -18,7 +18,7 @@ index 24a1f72fa81584dcdb447a4e2d1d68462c6357ee..1c6ea9dd4335c573d6f83d38f7747033
  
              Player respawnPlayer = this.cserver.getPlayer(entityplayer1);
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
-index 99e0413cad2bca77e80ea67aaeb78ebb25e6f896..612f707bfc8179c143cb9c1c70b305464598b815 100644
+index 82964cfbe172e22e19203d37addf9fedbe8edaa5..f7bf59f63cc3a5c4201857835ae136cbfdb61f8f 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 @@ -377,7 +377,7 @@ public class CraftWorld implements World {

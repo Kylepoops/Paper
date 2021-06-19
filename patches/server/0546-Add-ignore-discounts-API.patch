@@ -5,7 +5,7 @@ Subject: [PATCH] Add ignore discounts API
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/npc/Villager.java b/src/main/java/net/minecraft/world/entity/npc/Villager.java
-index 23ea91449a04e8457273db34c4a388bdf85d7dfc..fe9ee43bf0c49c0541bc4fb114e63b8a0fcf1967 100644
+index cad80978510b50a3061cc5c898d6e7cb2b62b3b0..4a7de0ae19d49d868a5e6696e1a01871b654bf48 100644
 --- a/src/main/java/net/minecraft/world/entity/npc/Villager.java
 +++ b/src/main/java/net/minecraft/world/entity/npc/Villager.java
 @@ -474,6 +474,7 @@ public class Villager extends AbstractVillager implements ReputationEventHandler

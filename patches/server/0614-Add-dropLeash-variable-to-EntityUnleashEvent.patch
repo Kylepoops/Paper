@@ -5,7 +5,7 @@ Subject: [PATCH] Add dropLeash variable to EntityUnleashEvent
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/Mob.java b/src/main/java/net/minecraft/world/entity/Mob.java
-index e5ad2b5eb3ac4e068239c0e490ea47ed7cfc8106..6c603926c0d582b16268fd0888bc685442e0c8cd 100644
+index 108c5871c2171f22a8e0db8c00bfcaa4438b6137..c4c5c35e37b793f3b74349ff03c0829f4913b91c 100644
 --- a/src/main/java/net/minecraft/world/entity/Mob.java
 +++ b/src/main/java/net/minecraft/world/entity/Mob.java
 @@ -1208,12 +1208,15 @@ public abstract class Mob extends LivingEntity {
@@ -122,7 +122,7 @@ index b9b67134f02fd7484ed19905c9ae1f9b8a26ce26..c05f173b7642380900fdd77ce5d2c020
                          }
                      }
 diff --git a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
-index 9e841c20c0333b47b189edca3c31b2c83a889ebb..2c26ac546ae5915c200c616927e8f9ed3dc8c1f5 100644
+index fefb8ff3caff61d8ea2c52d5b280e5af03b76bbf..4991ee6671f73b446e5dff958427b10aac78c63a 100644
 --- a/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 +++ b/src/main/java/org/bukkit/craftbukkit/event/CraftEventFactory.java
 @@ -1466,8 +1466,10 @@ public class CraftEventFactory {

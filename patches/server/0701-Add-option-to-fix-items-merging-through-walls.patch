@@ -5,7 +5,7 @@ Subject: [PATCH] Add option to fix items merging through walls
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 86f84a7ebc7a118187aabaf44c83ea737af34c6e..7922192dbe37b9cfcfe85d6ac240c145be467b31 100644
+index 05c1aa7c49134e099e3d14a244252173e6755401..258d54e450ff5aec06eaeb1d57c049d9b0b3ea48 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -797,5 +797,10 @@ public class PaperWorldConfig {

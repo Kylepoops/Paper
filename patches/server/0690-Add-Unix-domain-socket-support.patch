@@ -11,7 +11,7 @@ Tested-by: Mariell Hoversholm <proximyst@proximyst.com>
 Reviewed-by: Mariell Hoversholm <proximyst@proximyst.com>
 
 diff --git a/src/main/java/net/minecraft/network/Connection.java b/src/main/java/net/minecraft/network/Connection.java
-index 759e563d1ed13249fada8a8eab6b6a10e5ef0d37..e1ecfe280f97985fadbe22db7e420f04c38dd672 100644
+index 35a03d15f87be8eb86d65e1863a3e0cb2dd201ee..c203a78a28e6457bd25b34b5c5ecaa35e3f9211e 100644
 --- a/src/main/java/net/minecraft/network/Connection.java
 +++ b/src/main/java/net/minecraft/network/Connection.java
 @@ -614,6 +614,11 @@ public class Connection extends SimpleChannelInboundHandler<Packet<?>> {

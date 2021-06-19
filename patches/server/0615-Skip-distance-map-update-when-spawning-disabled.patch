@@ -5,7 +5,7 @@ Subject: [PATCH] Skip distance map update when spawning disabled.
 
 
 diff --git a/src/main/java/net/minecraft/server/level/ServerChunkCache.java b/src/main/java/net/minecraft/server/level/ServerChunkCache.java
-index c0bbb1acd7d83a70c9f2c34f7d19cea0039e0567..570875c060896c80d8c75e86e29a918f86b5865f 100644
+index 0b22fd8ac75146bc7b647cfbefc73ce890ccb033..82d3cfb2d346a8b929e9469ae09369f6a639f81d 100644
 --- a/src/main/java/net/minecraft/server/level/ServerChunkCache.java
 +++ b/src/main/java/net/minecraft/server/level/ServerChunkCache.java
 @@ -811,7 +811,7 @@ public class ServerChunkCache extends ChunkSource {

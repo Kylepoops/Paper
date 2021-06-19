@@ -5,30 +5,6 @@ Subject: [PATCH] Add a way to get translation keys for blocks, entities and
  materials
 
 
-diff --git a/src/main/java/net/minecraft/world/entity/EntityType.java b/src/main/java/net/minecraft/world/entity/EntityType.java
-index 9be6bcd490562ceefcadcfbbb6f650688737278b..f901ac92e5187868a01946c0744773f4f59af82e 100644
---- a/src/main/java/net/minecraft/world/entity/EntityType.java
-+++ b/src/main/java/net/minecraft/world/entity/EntityType.java
-@@ -291,6 +291,7 @@ public class EntityType<T extends Entity> implements EntityTypeTest<Entity, T> {
-         return Registry.ENTITY_TYPE.getKey(type);
-     }
- 
-+    public static Optional<EntityType<?>> getByName(String name) { return byString(name); } // Paper - OBFHELPER
-     public static Optional<EntityType<?>> byString(String id) {
-         return Registry.ENTITY_TYPE.getOptional(ResourceLocation.tryParse(id));
-     }
-diff --git a/src/main/java/net/minecraft/world/level/block/Block.java b/src/main/java/net/minecraft/world/level/block/Block.java
-index 878cdfc49253e7916d038495f79fec7cce75aa50..85fa2b26863e2da8f4de93aa10ffd77f7076b682 100644
---- a/src/main/java/net/minecraft/world/level/block/Block.java
-+++ b/src/main/java/net/minecraft/world/level/block/Block.java
-@@ -427,6 +427,7 @@ public class Block extends BlockBehaviour implements ItemLike {
-         return new TranslatableComponent(this.getDescriptionId());
-     }
- 
-+    public String getOrCreateDescriptionId() { return getDescriptionId(); } // Paper - OBFHELPER
-     public String getDescriptionId() {
-         if (this.descriptionId == null) {
-             this.descriptionId = Util.makeDescriptionId("block", Registry.BLOCK.getKey(this));
 diff --git a/src/main/java/org/bukkit/craftbukkit/block/CraftBlock.java b/src/main/java/org/bukkit/craftbukkit/block/CraftBlock.java
 index 64c304cab8c7c4c9c29f73465f99c11f224a72bd..b31eaa1459690d7f54989ba7a01f96a3f0d8d3b9 100644
 --- a/src/main/java/org/bukkit/craftbukkit/block/CraftBlock.java
@@ -45,7 +21,7 @@ index 64c304cab8c7c4c9c29f73465f99c11f224a72bd..b31eaa1459690d7f54989ba7a01f96a3
      // Paper end
  }
 diff --git a/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java b/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
-index d18f8d7c699893740fa709ef1f0caa4390e7eb20..62b5070f9645fec91d016988f0f2262fd61e2e89 100644
+index d18f8d7c699893740fa709ef1f0caa4390e7eb20..736cbdc118b7a19b724a3afd433927e8e8316d23 100644
 --- a/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
 +++ b/src/main/java/org/bukkit/craftbukkit/util/CraftMagicNumbers.java
 @@ -43,6 +43,7 @@ import org.bukkit.Registry;
@@ -64,19 +40,19 @@ index d18f8d7c699893740fa709ef1f0caa4390e7eb20..62b5070f9645fec91d016988f0f2262f
 +    @Override
 +    public String getTranslationKey(Material mat) {
 +        if (mat.isBlock()) {
-+            return getBlock(mat).getOrCreateDescriptionId();
++            return getBlock(mat).getDescriptionId();
 +        }
 +        return getItem(mat).getDescriptionId();
 +    }
 +
 +    @Override
 +    public String getTranslationKey(org.bukkit.block.Block block) {
-+        return ((org.bukkit.craftbukkit.block.CraftBlock)block).getNMS().getBlock().getOrCreateDescriptionId();
++        return ((org.bukkit.craftbukkit.block.CraftBlock)block).getNMS().getBlock().getDescriptionId();
 +    }
 +
 +    @Override
 +    public String getTranslationKey(org.bukkit.entity.EntityType type) {
-+        return net.minecraft.world.entity.EntityType.getByName(type.getName()).map(net.minecraft.world.entity.EntityType::getDescriptionId).orElse(null);
++        return net.minecraft.world.entity.EntityType.byString(type.getName()).map(net.minecraft.world.entity.EntityType::getDescriptionId).orElse(null);
 +    }
 +
 +    @Override

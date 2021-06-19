@@ -6,7 +6,7 @@ Subject: [PATCH] Clear SyncLoadInfo
 This patch merely adds the extra argument "clear" after /paper syncloadinfo to clear currently stored syncload info.
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperCommand.java b/src/main/java/com/destroystokyo/paper/PaperCommand.java
-index 8fdfcf001cf2ed6184d86ee033ede08fdf9aa5d6..ce332be5449d3129356e55841cc319b3d35adde4 100644
+index 847ff34a56b7477996901662c25f50b79262f4e1..ba8395435482fc4d6e02fc86794cdb0d35d4399c 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperCommand.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperCommand.java
 @@ -205,6 +205,13 @@ public class PaperCommand extends Command {

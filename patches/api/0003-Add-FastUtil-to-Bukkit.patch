@@ -6,31 +6,14 @@ Subject: [PATCH] Add FastUtil to Bukkit
 Doesn't expose to plugins, just allows Paper-API to use it for optimization
 
 diff --git a/build.gradle.kts b/build.gradle.kts
-index 125fee17f7ab37fb2b4deb096f37a43cb9519e96..e4123d5f918a5f21b7f6fddba7084643f86ad5aa 100644
+index b1a33fdfd6495e5243315312aca97c2512a64dcc..2feb94aeb1eef2241963f6b541247d923913e560 100644
 --- a/build.gradle.kts
 +++ b/build.gradle.kts
 @@ -18,6 +18,7 @@ dependencies {
      api("net.md-5:bungeecord-chat:1.16-R0.4")
-     api("org.yaml:snakeyaml:1.29")
+     api("org.yaml:snakeyaml:1.28")
      api("com.googlecode.json-simple:json-simple:1.1.1") // Paper
 +    api("it.unimi.dsi:fastutil:8.2.2")
  
      compileOnly("org.apache.maven:maven-resolver-provider:3.8.1")
      compileOnly("org.apache.maven.resolver:maven-resolver-connector-basic:1.7.0")
-diff --git a/pom.xml b/pom.xml
-index e5802bcb6fc2376cff2ee8b3069150127312b154..7b44549b508862b207324a6003fcdfa623f40f07 100644
---- a/pom.xml
-+++ b/pom.xml
-@@ -32,6 +32,12 @@
-     </repositories>
- 
-     <dependencies>
-+        <dependency>
-+            <groupId>it.unimi.dsi</groupId>
-+            <artifactId>fastutil</artifactId>
-+            <version>8.2.2</version>
-+            <scope>provided</scope>
-+        </dependency>
-         <dependency>
-             <groupId>commons-lang</groupId>
-             <artifactId>commons-lang</artifactId>

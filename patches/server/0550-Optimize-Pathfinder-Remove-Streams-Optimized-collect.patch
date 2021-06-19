@@ -17,7 +17,7 @@ This lets us get faster foreach iteration, as well as avoids map lookups on
 the values when needed.
 
 diff --git a/src/main/java/net/minecraft/world/level/pathfinder/PathFinder.java b/src/main/java/net/minecraft/world/level/pathfinder/PathFinder.java
-index 800d464207026d145056b39b298045121342b899..6062f5154c55179e1cf3b280e6dc56d2f561987d 100644
+index 076f2dea0e75577ccb0316b3171ed8f44ab6d2ba..3dc896a7ded8d5d109100a393c8299e308954d99 100644
 --- a/src/main/java/net/minecraft/world/level/pathfinder/PathFinder.java
 +++ b/src/main/java/net/minecraft/world/level/pathfinder/PathFinder.java
 @@ -35,27 +35,31 @@ public class PathFinder {

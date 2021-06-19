@@ -5,7 +5,7 @@ Subject: [PATCH] Player Chunk Load/Unload Events
 
 
 diff --git a/src/main/java/net/minecraft/server/level/ServerPlayer.java b/src/main/java/net/minecraft/server/level/ServerPlayer.java
-index 09a0c6fd3746bb182a4262f47c9f1754db30bbd5..556f71fea6badb9745f7c455f85907a69c2c9797 100644
+index 9a729aecfa8c901159c74c42544ba31b69bab199..b057d99f6777b1e051235f228aaa6d10457b76d0 100644
 --- a/src/main/java/net/minecraft/server/level/ServerPlayer.java
 +++ b/src/main/java/net/minecraft/server/level/ServerPlayer.java
 @@ -2089,11 +2089,21 @@ public class ServerPlayer extends Player {

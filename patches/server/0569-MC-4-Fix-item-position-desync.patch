@@ -41,10 +41,10 @@ index b30c08bfb8c55161543a4ef09f2e462e0a1fe4ae..ec93f5300cc7d423ec0d292f0f8443f9
  
      public Vec3 updateEntityPosition(Vec3 orig) {
 diff --git a/src/main/java/net/minecraft/world/entity/Entity.java b/src/main/java/net/minecraft/world/entity/Entity.java
-index 8000473728491c304b27a64c5ba5e83b1fdcee0c..1476be2f56c1f61be97497b9a86efacd8563e638 100644
+index 408d0f51353c745cbdc5c314dd25fa0c8a13441c..879cadfd1fe96059e621c625adef1673a41ac5dc 100644
 --- a/src/main/java/net/minecraft/world/entity/Entity.java
 +++ b/src/main/java/net/minecraft/world/entity/Entity.java
-@@ -3751,6 +3751,16 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
+@@ -3749,6 +3749,16 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
      }
  
      public final void setPosRaw(double x, double y, double z) {

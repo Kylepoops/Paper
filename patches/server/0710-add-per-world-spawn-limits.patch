@@ -6,7 +6,7 @@ Subject: [PATCH] add per world spawn limits
 Taken from #2982. Credit to Chasewhip8
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 4a24d7ae6b65fced643859a965ce1d4f6a3828fd..a1d02e22bd67f1f1258dfffcf435018a5952afb8 100644
+index 417cf3d8988f28fa1e0b05f11b89ef2c02d59ed9..26e18a08a7f0bd704ff3055ce3a7814191450c85 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 @@ -658,6 +658,19 @@ public class PaperWorldConfig {
@@ -30,7 +30,7 @@ index 4a24d7ae6b65fced643859a965ce1d4f6a3828fd..a1d02e22bd67f1f1258dfffcf435018a
      private void lightQueueSize() {
          lightQueueSize = getInt("light-queue-size", lightQueueSize);
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
-index 9031f4423bb59b8f41968a58924d967a915d2446..6a425d8d082b34475c90703f854a7ca49dda367c 100644
+index 1cc8a85ae69c98987ab516418808b688c266711c..3403b75c8311f1e52a0533363c5f0307442f8a15 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
 @@ -351,6 +351,13 @@ public class CraftWorld implements World {
