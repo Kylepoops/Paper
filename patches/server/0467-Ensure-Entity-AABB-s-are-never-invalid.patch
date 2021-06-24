@@ -5,7 +5,7 @@ Subject: [PATCH] Ensure Entity AABB's are never invalid
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/Entity.java b/src/main/java/net/minecraft/world/entity/Entity.java
-index 40fe3766bfe06fe15d258d3fc88fb179d2bb5d05..dcc128fdf45b23fe07a20136f498ead2ac6ee4a7 100644
+index 912723108af2ffe660f0c2e528e4e028f7f74bcb..b208f561ab8bb0ea9ad06fb2a30becef4583c2e6 100644
 --- a/src/main/java/net/minecraft/world/entity/Entity.java
 +++ b/src/main/java/net/minecraft/world/entity/Entity.java
 @@ -560,7 +560,7 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
@@ -17,7 +17,7 @@ index 40fe3766bfe06fe15d258d3fc88fb179d2bb5d05..dcc128fdf45b23fe07a20136f498ead2
      }
  
      protected AABB makeBoundingBox() {
-@@ -3735,6 +3735,12 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
+@@ -3740,6 +3740,12 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
      }
  
      public final void setPosRaw(double x, double y, double z) {

@@ -5,7 +5,7 @@ Subject: [PATCH] Entity#fromMobSpawner()
 
 
 diff --git a/src/main/java/net/minecraft/world/entity/Entity.java b/src/main/java/net/minecraft/world/entity/Entity.java
-index 267ecf9c5a6c9e696cb2a5c8be13bbc4ab14cd41..a6c26bd5a23799659db03fc2db55009391936f2a 100644
+index 7c8df6781ffe142b6d1c4fd7b18f9a2f280194e7..2aa6c6b4a5a431b6860e91684cf20514fbb52676 100644
 --- a/src/main/java/net/minecraft/world/entity/Entity.java
 +++ b/src/main/java/net/minecraft/world/entity/Entity.java
 @@ -321,6 +321,7 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
@@ -16,8 +16,8 @@ index 267ecf9c5a6c9e696cb2a5c8be13bbc4ab14cd41..a6c26bd5a23799659db03fc2db550093
      protected int numCollisions = 0; // Paper
      public void inactiveTick() { }
      // Spigot end
-@@ -1859,6 +1860,10 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
-                 nbt.putUUID("Paper.OriginWorld", originWorld);
+@@ -1862,6 +1863,10 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
+                 }
                  nbt.put("Paper.Origin", this.newDoubleList(origin.getX(), origin.getY(), origin.getZ()));
              }
 +            // Save entity's from mob spawner status
@@ -27,7 +27,7 @@ index 267ecf9c5a6c9e696cb2a5c8be13bbc4ab14cd41..a6c26bd5a23799659db03fc2db550093
              // Paper end
              return nbt;
          } catch (Throwable throwable) {
-@@ -1996,6 +2001,8 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
+@@ -2001,6 +2006,8 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource, n
                  this.originWorld = originWorld;
                  origin = new org.bukkit.util.Vector(originTag.getDouble(0), originTag.getDouble(1), originTag.getDouble(2));
              }

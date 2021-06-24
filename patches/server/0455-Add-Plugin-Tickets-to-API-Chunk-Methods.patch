@@ -22,10 +22,10 @@ wants it to collect even faster, they can restore that setting back to 1 instead
 Not adding it to .getType() though to keep behavior consistent with vanilla for performance reasons.
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftServer.java b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-index e3338717bffe5f5e4a00fe1ebe3ba7cf74555b36..f7d542b828904fb51a30dfb7a50e01e4e2df0f3e 100644
+index 89f9fc6ce6ba0d4bb6bb133d26bed6ec03a55694..30552c2dcb2b8e648ee6519478e830f3e86a10b9 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-@@ -346,7 +346,7 @@ public final class CraftServer implements Server {
+@@ -345,7 +345,7 @@ public final class CraftServer implements Server {
          this.ambientSpawn = this.configuration.getInt("spawn-limits.ambient");
          console.autosavePeriod = this.configuration.getInt("ticks-per.autosave");
          this.warningState = WarningState.value(this.configuration.getString("settings.deprecated-verbose"));
@@ -34,7 +34,7 @@ index e3338717bffe5f5e4a00fe1ebe3ba7cf74555b36..f7d542b828904fb51a30dfb7a50e01e4
          this.minimumAPI = this.configuration.getString("settings.minimum-api");
          this.loadIcon();
      }
-@@ -834,7 +834,7 @@ public final class CraftServer implements Server {
+@@ -830,7 +830,7 @@ public final class CraftServer implements Server {
          this.waterAmbientSpawn = this.configuration.getInt("spawn-limits.water-ambient");
          this.ambientSpawn = this.configuration.getInt("spawn-limits.ambient");
          this.warningState = WarningState.value(this.configuration.getString("settings.deprecated-verbose"));

@@ -1,7 +1,7 @@
 plugins {
     java
     id("com.github.johnrengelman.shadow") version "7.0.0" apply false
-    id("io.papermc.paperweight.core") version "1.1.5"
+    id("io.papermc.paperweight.core") version "1.1.6"
 }
 
 subprojects {
@@ -14,9 +14,15 @@ subprojects {
         }
     }
 
-    tasks.withType<JavaCompile>().configureEach {
-        options.encoding = "UTF-8"
+    tasks.withType<JavaCompile> {
+        options.encoding = Charsets.UTF_8.name()
         options.release.set(16)
+    }
+    tasks.withType<Javadoc> {
+        options.encoding = Charsets.UTF_8.name()
+    }
+    tasks.withType<ProcessResources> {
+        filteringCharset = Charsets.UTF_8.name()
     }
 
     configure<PublishingExtension> {
